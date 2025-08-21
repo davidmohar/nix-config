@@ -1,7 +1,9 @@
-{ pkgs
-, lib
-, ...
-}: {
+{
+  pkgs,
+  lib,
+  ...
+}:
+{
   imports = [
     ./firefox.nix
     ./alacritty.nix
@@ -9,10 +11,12 @@
     ./zed-editor.nix
   ];
 
-  home.packages = lib.optionals pkgs.stdenv.isDarwin (with pkgs; [
-    gimp
-    rectangle
-    stats
-    logseq
-  ]);
+  home.packages = lib.optionals pkgs.stdenv.isDarwin (
+    with pkgs;
+    [
+      gimp
+      rectangle
+      stats
+    ]
+  );
 }
