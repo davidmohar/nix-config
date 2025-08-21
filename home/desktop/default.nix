@@ -17,6 +17,7 @@
       gimp
       rectangle
       stats
+      discord
     ]
   );
 }
