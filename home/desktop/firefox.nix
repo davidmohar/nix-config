@@ -1,9 +1,11 @@
-{ pkgs
-, lib
-, inputs
-, config
-, ...
-}: {
+{
+  pkgs,
+  lib,
+  inputs,
+  config,
+  ...
+}:
+{
   programs.firefox = {
     enable = true;
 
@@ -12,6 +14,7 @@
       extensions = {
         packages = with pkgs.nur.repos.rycee.firefox-addons; [
           vimium
+          proton-pass
         ];
       };
     };
