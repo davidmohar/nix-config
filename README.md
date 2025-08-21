@@ -4,8 +4,6 @@ My personal Nix configuration for Apple Silicon devices with `nix-darwin` and `h
 
 ## Installation
 
-> Initial installation and subsequent system changes will require elevated permissions. Make sure to request them via CyberArk EPM before running these commands. Changes to `homeConfigurations` always run exclusively in userspace so no additional permissions are needed.
-
 Nix should be the only needed dependency for this repository. You can install it by using the official multi-user installation script:
 
 ```bash
